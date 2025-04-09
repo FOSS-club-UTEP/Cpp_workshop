@@ -3,6 +3,7 @@
 #include <string>        // For std::string
 #include <sstream>       // For parsing strings using istringstream
 #include <thread>        // For std::this_thread::sleep_for (pause execution)
+#include <fstream>       // For writing to a CSV file
 
 // g++ -std=c++17 -o leaderboard main.cpp  
 
@@ -96,5 +97,6 @@ int main() {
 
     progressBar(); // Display fake loading bar for effect
     lb.print();    // Show the leaderboard
+    // lb.saveToCSV("leaderboard.csv"); // Save to CSV
     return 0;
 }
